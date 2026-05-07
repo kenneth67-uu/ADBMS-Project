@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campaign | DonateHub</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ═══════════ NAVBAR ═══════════ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-top">UMDC</span>
+      <span class="logo-sub">meaning of UMDC</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="goal.html">GOAL</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="campaign.html" class="active">Campaign</a>
+    </nav>
+    <div class="nav-actions">
+      <span class="nav-username" id="navUsername"></span>
+      <a href="login.php" class="btn-outline" id="navSignin">SIGN IN</a>
+      <button class="btn-green donate-btn" id="navDonate">DONATE</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════ CAMPAIGN FORM ═══════════ -->
+<section class="sec page-wrap">
+  <div class="container">
+
+    <h1 class="campaign-title">Start Your Campaign</h1>
+
+    <!-- JS fills this with success/error after PHP redirect -->
+    <div id="formAlert"></div>
+
+    <div class="form-card">
+      <p class="form-card-title">Let's get started</p>
+
+      <!--
+        POST goes to campaign.php which handles saving and redirects back.
+        The submit listener is attached in script.js (no inline onsubmit).
+        The cancel button uses data-action="cancel-campaign" so script.js
+        can attach the listener once, without inline onclick.
+      -->
+      <form method="POST" action="campaign.php" id="campaignForm">
+
+        <div class="form-group">
+          <label for="campaign_title">Campaign Title</label>
+          <input type="text" id="campaign_title" name="campaign_title"
+                 placeholder="e.g. Food Drive for Barangay Tuy" required/>
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category</label>
+          <select id="category" name="category" required>
+            <option value="" disabled selected>Select Category...</option>
+            <option value="food">Food &amp; Nutrition</option>
+            <option value="education">Education</option>
+            <option value="shelter">Shelter &amp; Housing</option>
+            <option value="water">Clean Water</option>
+            <option value="medical">Medical &amp; Health</option>
+            <option value="livelihood">Livelihood</option>
+            <option value="disaster">Disaster Relief</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description"
+                    placeholder="Describe your campaign goals and who it will help..." required></textarea>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="target_amount">Target Amount (₱)</label>
+            <input type="number" id="target_amount" name="target_amount"
+                   placeholder="0.00" min="1" required/>
+          </div>
+          <div class="form-group">
+            <label for="end_date">End Date</label>
+            <input type="date" id="end_date" name="end_date" required/>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <!-- data-action used by script.js; no inline onclick -->
+          <button type="button" class="btn-cancel" data-action="cancel-campaign">Cancel</button>
+          <button type="submit" class="btn-submit">Submit For Review</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ LOGIN MODAL (inner pages fallback) ═══════════ -->
+<div class="modal-bg" id="loginModal">
+  <div class="modal-box">
+    <div class="modal-icon">🔒</div>
+    <h3>Sign In Required</h3>
+    <p>To donate and support our community, please sign in or create an account first.</p>
+    <div class="modal-btns">
+      <a href="login.php" class="btn-modal-yes">Sign In</a>
+      <button class="btn-modal-no">Not Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ CTA ═══════════ -->
+<section class="cta-banner">
+  <div class="cta-bg"><img src="images/cta-bg.jpg" alt="" onerror="this.style.display='none'"/></div>
+  <div class="cta-overlay"></div>
+  <div class="cta-body">
+    <p>Be part of Bayanihan—give a gift to<br>help a fellow Batangueño.</p>
+    <button class="btn-cta donate-btn">DONATE</button>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="site-footer">
+  <p>© 2026 <a href="index.html" class="footer-umdc">UMDC</a>. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

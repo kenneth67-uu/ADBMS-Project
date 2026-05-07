@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Goal | DonateHub</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ═══════════ NAVBAR ═══════════ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-top">UMDC</span>
+      <span class="logo-sub">meaning of UMDC</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="goal.html" class="active">GOAL</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="campaign.html">Campaign</a>
+    </nav>
+    <div class="nav-actions">
+      <span class="nav-username" id="navUsername"></span>
+      <a href="login.php" class="btn-outline" id="navSignin">SIGN IN</a>
+      <button class="btn-green donate-btn" id="navDonate">DONATE</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════ PAGE HERO ═══════════ -->
+<section class="page-hero">
+  <div class="ph-bg"><img src="images/goal-bg.jpg" alt="" onerror="this.style.display='none'"/></div>
+  <div class="ph-overlay"></div>
+  <div class="ph-body">
+    <h1>Our Goal</h1>
+    <p>
+      <span class="hl">UMDC</span> is built on the spirit of Bayanihan, connecting generous Batangueños
+      with communities in need. Our mission is to make giving simple, transparent, and impactful—whether
+      through financial support, essential goods, or acts of service—so that no one in Batangas has to
+      face hardship alone.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ WHY GIVING MATTERS ═══════════ -->
+<section class="sec" style="background:#fff;">
+  <div class="container">
+    <h2 class="sec-title">Why Giving Matters in Batangas</h2>
+    <p class="sec-sub">At <span class="hl">UMDC</span>, giving is not just charity—it is a lifeline.</p>
+    <div class="why-grid">
+      <div class="why-text">
+        <p>Many communities across Batangas, especially in rural and disaster-prone areas, continue to struggle with access to basic needs such as food, clean water, education, and shelter. Events like typhoons and the eruption of Taal Volcano have made these challenges even more difficult.</p>
+        <p>Through DonateHub, we bridge the gap between those who want to help and those who need it most—turning generosity into real, local impact.</p>
+      </div>
+      <div class="why-photos">
+        <div class="why-photo">
+          <img src="images/community1.jpg" alt="Batangas community" onerror="this.parentElement.style.background='#d0d0d0'"/>
+        </div>
+        <div class="why-photo">
+          <img src="images/community2.jpg" alt="Disaster relief" onerror="this.parentElement.style.background='#d0d0d0'"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ INFO CARDS ═══════════ -->
+<section class="sec cards-bg">
+  <div class="container">
+    <div class="cards-grid">
+
+      <div class="info-card card-green">
+        <h3>The Reality in Our Communities</h3>
+        <ul>
+          <li>Thousands of Batangueño families are affected by poverty and disasters every year</li>
+          <li>Many barangays still lack consistent access to food, clean water, and healthcare</li>
+          <li>Students in remote areas struggle due to lack of school supplies and learning resources</li>
+          <li>Disaster recovery can take months—or even years—without sustained support</li>
+        </ul>
+      </div>
+
+      <div class="info-card card-yellow">
+        <h3>Impact on Families and Children</h3>
+        <p>Behind every need is a family striving to survive.</p>
+        <ul>
+          <li>Parents face daily challenges in providing basic necessities</li>
+          <li>Children are at risk of stopping their education due to financial struggles</li>
+          <li>Evacuated families often live in overcrowded and unsafe environments</li>
+          <li>Health risks increase, poor nutrition and lack of clean resources</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ LOGIN MODAL (inner pages fallback) ═══════════ -->
+<div class="modal-bg" id="loginModal">
+  <div class="modal-box">
+    <div class="modal-icon">🔒</div>
+    <h3>Sign In Required</h3>
+    <p>To donate and support our community, please sign in or create an account first.</p>
+    <div class="modal-btns">
+      <a href="login.php" class="btn-modal-yes">Sign In</a>
+      <button class="btn-modal-no">Not Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ CTA ═══════════ -->
+<section class="cta-banner">
+  <div class="cta-bg"><img src="images/cta-bg.jpg" alt="" onerror="this.style.display='none'"/></div>
+  <div class="cta-overlay"></div>
+  <div class="cta-body">
+    <p>Be part of Bayanihan—give a gift to<br>help a fellow Batangueño.</p>
+    <button class="btn-cta donate-btn">DONATE</button>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="site-footer">
+  <p>© 2026 <a href="index.html" class="footer-umdc">UMDC</a>. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

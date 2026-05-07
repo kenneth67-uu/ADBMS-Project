@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DonateHub – Giving Generosity, Transforming Lives</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ═══════════ NAVBAR ═══════════ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-top">UMDC</span>
+      <span class="logo-sub">meaning of UMDC</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="goal.html">GOAL</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="campaign.html">Campaign</a>
+    </nav>
+    <div class="nav-actions">
+      <span class="nav-username" id="navUsername"></span>
+      <!-- Classes only — no inline onclick -->
+      <button class="btn-nav-action btn-nav-outline signup-btn" id="navSignin">SIGN UP</button>
+      <button class="btn-nav-action btn-nav-solid donate-btn"   id="navDonate">DONATE NOW</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="images/hero-bg.jpg" alt="Community volunteers" onerror="this.style.display='none'"/>
+  </div>
+  <div class="hero-body">
+    <h1 class="hero-title">GIVING GENEROSITY<br>TRANSFORMING LIVES</h1>
+    <p class="hero-desc">
+      Rooted in Bayanihan, DonateHub connects local donors with Batangueños in need. Give
+      money or goods through our simple platform to help our community thrive, not just survive.
+    </p>
+    <a href="goal.html" class="btn-learn">Learn more</a>
+  </div>
+</section>
+
+<!-- ═══════════ STATS ═══════════ -->
+<section class="stats-bar">
+  <div class="stats-grid">
+
+    <div class="stat-cell">
+      <div class="stat-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+          <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5C15 14.17 10.33 13 8 13zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+        </svg>
+      </div>
+      <div class="stat-info"><strong>2,450+</strong><span>Active Donors</span></div>
+    </div>
+
+    <div class="stat-cell">
+      <div class="stat-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+          <path d="M20 7h-4V5c0-1.1-.9-2-2-2h-4c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM10 5h4v2h-4V5zm4 11H8v-1H6v-2h8v3zm2-3h2v2h-2v-2z"/>
+        </svg>
+      </div>
+      <div class="stat-info"><strong>5,320+</strong><span>Goods Donated</span></div>
+    </div>
+
+    <div class="stat-cell">
+      <div class="stat-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+          <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+        </svg>
+      </div>
+      <div class="stat-info"><strong>₱1.2M+</strong><span>Funds Raised</span></div>
+    </div>
+
+    <div class="stat-cell">
+      <div class="stat-icon">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </div>
+      <div class="stat-info"><strong>8,000+</strong><span>Lives Impacted</span></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SIGN UP MODAL
+     Opened by: .signup-btn  (handled in script.js)
+════════════════════════════════════════════════ -->
+<div class="modal-bg" id="signupModal">
+  <div class="modal-box modal-form-box">
+    <button class="modal-close-x" aria-label="Close">&times;</button>
+    <div class="modal-icon">👋</div>
+    <h3>Create Your Account</h3>
+    <p class="modal-sub">Sign up to donate and support your community.</p>
+
+    <div class="modal-alert modal-alert-error" id="signupError" style="display:none;"></div>
+
+    <form id="signupForm">
+      <div class="modal-field">
+        <label for="su_name">Full Name</label>
+        <input type="text" id="su_name" placeholder="Your full name" required/>
+      </div>
+      <div class="modal-field">
+        <label for="su_email">Email Address</label>
+        <input type="email" id="su_email" placeholder="you@email.com" required/>
+      </div>
+      <div class="modal-field">
+        <label for="su_password">Password</label>
+        <div class="modal-pw-wrap">
+          <input type="password" id="su_password" placeholder="At least 6 characters" required/>
+          <!-- .modal-pw-toggle handled in script.js delegation -->
+          <button type="button" class="modal-pw-toggle">Show</button>
+        </div>
+      </div>
+      <button type="submit" class="btn-modal-submit">Create Account</button>
+    </form>
+
+    <p class="modal-switch">
+      Already signed up?
+      <!-- .modal-link-btn handled in script.js delegation -->
+      <button type="button" class="modal-link-btn">Go to Donate →</button>
+    </p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════
+     DONATE MODAL
+     Opened by: .donate-btn  (handled in script.js)
+════════════════════════════════════════════════ -->
+<div class="modal-bg" id="donateModal">
+  <div class="modal-box modal-form-box">
+    <button class="modal-close-x" aria-label="Close">&times;</button>
+    <div class="modal-icon">💚</div>
+    <h3>Make a Donation</h3>
+    <p class="modal-sub" id="donateGreeting">Your generosity makes a real difference.</p>
+
+    <div class="modal-alert modal-alert-success" id="donateSuccess" style="display:none;"></div>
+    <div class="modal-alert modal-alert-error"   id="donateError"   style="display:none;"></div>
+
+    <form id="donateForm">
+      <div class="modal-field">
+        <label for="d_amount">Amount (₱)</label>
+        <div class="quick-wrap">
+          <!-- data-val used by script.js; no onclick needed -->
+          <button type="button" class="quick-btn" data-val="100">₱100</button>
+          <button type="button" class="quick-btn" data-val="250">₱250</button>
+          <button type="button" class="quick-btn" data-val="500">₱500</button>
+          <button type="button" class="quick-btn" data-val="1000">₱1,000</button>
+        </div>
+        <input type="number" id="d_amount" min="1" placeholder="Or enter a custom amount"/>
+      </div>
+
+      <div class="modal-field">
+        <label>Donation Type</label>
+        <div class="type-wrap">
+          <!-- data-type used by script.js; no onclick needed -->
+          <button type="button" class="type-btn active" data-type="money">💵 Money</button>
+          <button type="button" class="type-btn"        data-type="goods">📦 Goods</button>
+        </div>
+        <input type="hidden" id="d_type" value="money"/>
+      </div>
+
+      <div class="modal-field" id="goodsField" style="display:none;">
+        <label for="d_goods">Describe the Goods</label>
+        <input type="text" id="d_goods" placeholder="e.g. 10 kg rice, school supplies, canned goods"/>
+      </div>
+
+      <div class="modal-field">
+        <label for="d_message">
+          Message <span style="font-weight:400; color:#999; font-size:0.8rem;">(optional)</span>
+        </label>
+        <textarea id="d_message" rows="2" placeholder="Leave a message of support..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-modal-submit">Submit Donation</button>
+    </form>
+  </div>
+</div>
+
+<!-- ═══════════ CTA BANNER ═══════════ -->
+<section class="cta-banner">
+  <div class="cta-bg"><img src="images/cta-bg.jpg" alt="" onerror="this.style.display='none'"/></div>
+  <div class="cta-overlay"></div>
+  <div class="cta-body">
+    <p>Be part of Bayanihan—give a gift to<br>help a fellow Batangueño.</p>
+    <!-- .donate-btn handled in script.js -->
+    <button class="btn-cta donate-btn">DONATE</button>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="site-footer">
+  <p>© 2026 <a href="index.html" class="footer-umdc">UMDC</a>. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

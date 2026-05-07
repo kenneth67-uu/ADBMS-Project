@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | DonateHub</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- ═══════════ NAVBAR ═══════════ -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-top">UMDC</span>
+      <span class="logo-sub">meaning of UMDC</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="goal.html">GOAL</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="campaign.html">Campaign</a>
+    </nav>
+    <div class="nav-actions">
+      <span class="nav-username" id="navUsername"></span>
+      <a href="login.php" class="btn-outline" id="navSignin">SIGN IN</a>
+      <button class="btn-green donate-btn" id="navDonate">DONATE</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ═══════════ PAGE HERO ═══════════ -->
+<section class="page-hero">
+  <div class="ph-bg"><img src="images/projects-bg.jpg" alt="" onerror="this.style.display='none'"/></div>
+  <div class="ph-overlay dark"></div>
+  <div class="ph-body">
+    <h1 class="green-txt">Impact &amp; Annual Reports</h1>
+    <p>
+      <span class="hl">UMDC</span> Impact Reports showcase the real and measurable difference your donations
+      make in Batangas communities. These are published every October. Our Annual Reports, released in
+      December, include both impact highlights and a transparent overview of funds and resource allocation.
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════ ANNUAL REPORTS ═══════════ -->
+<section class="sec" style="background:#fff;">
+  <div class="container">
+
+    <div class="report-row">
+      <div class="report-thumb">
+        <img src="images/report-2025.jpg" alt="2025 Report" onerror="this.parentElement.style.background='#d0d0d0'"/>
+      </div>
+      <div class="report-text">
+        <h3>2025 Annual Report &amp; Impact Report</h3>
+        <p>This year, your generosity supported more than 12,000 Batangueños across various communities. This number is more than a milestone—it represents trust in a platform built on Bayanihan and shared responsibility.</p>
+        <p>Over the past year, DonateHub:</p>
+        <ul>
+          <li>Distributed over 8,500 food packs and essential goods</li>
+          <li>Supported 2,000 students with school supplies</li>
+          <li>Helped rebuild 150 homes affected by typhoons and local disasters</li>
+          <li>Partnered with 20 barangays across Batangas</li>
+        </ul>
+        <p>Within this report, you'll see real stories of impact—families regaining stability, children returning to school, and communities rebuilding stronger than before. This is more than assistance—it is hope, dignity, and a step toward long-term resilience.</p>
+      </div>
+    </div>
+
+    <div class="report-row">
+      <div class="report-thumb">
+        <img src="images/report-2024.jpg" alt="2024 Report" onerror="this.parentElement.style.background='#d0d0d0'"/>
+      </div>
+      <div class="report-text">
+        <h3>2024 Annual Report &amp; Impact Report</h3>
+        <p>DonateHub continues to grow, and so does its impact.</p>
+        <p>From 2023 to 2024:</p>
+        <ul>
+          <li>30% increase in families receiving food and basic necessities</li>
+          <li>25% more students supported through education programs</li>
+          <li>Expanded outreach to 10 new barangays</li>
+          <li>Strengthened partnerships with local volunteers and organizations</li>
+        </ul>
+        <p>This year focused on improving accessibility and expanding our reach. Inside the report, you'll discover stories of generosity turning into real change—proof that when a community comes together, no one is left behind.</p>
+      </div>
+    </div>
+
+    <div class="report-row">
+      <div class="report-thumb">
+        <img src="images/report-2023.jpg" alt="2023 Report" onerror="this.parentElement.style.background='#d0d0d0'"/>
+      </div>
+      <div class="report-text">
+        <h3>2023 Annual Report &amp; Impact Report</h3>
+        <p>The need for support in many Batangas communities remains a challenge—but through collective action, progress is possible.</p>
+        <p>In our early stages, DonateHub:</p>
+        <ul>
+          <li>Assisted over 5,000 individuals through donations and outreach programs</li>
+          <li>Launched community drives for food, clothing, and school supplies</li>
+          <li>Built a growing network of donors and volunteers committed to Bayanihan</li>
+        </ul>
+        <p>This report reflects our foundation year—where small acts of kindness created meaningful change. It highlights our commitment to building a transparent, reliable, and community-driven platform.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ═══════════ FEATURED PROJECTS ═══════════ -->
+<section class="sec featured-bg">
+  <div class="container">
+    <h2 class="sec-title" style="text-align:center;">Featured Projects</h2>
+    <div class="proj-grid">
+
+      <div class="proj-card">
+        <div class="proj-img"><img src="images/proj-families.jpg" alt="Support Families" onerror="this.style.display='none'"/></div>
+        <div class="proj-body">
+          <h4>Support Families in Batangas</h4>
+          <p>Help provide food packs and daily essentials to local households in need.</p>
+          <!-- .donate-btn handled by script.js -->
+          <button class="btn-proj donate-btn">Donate</button>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-img"><img src="images/proj-school.jpg" alt="Back to School Drive" onerror="this.style.display='none'"/></div>
+        <div class="proj-body">
+          <h4>Back-to-School Drive</h4>
+          <p>Provide school supplies for students in underserved barangays.</p>
+          <button class="btn-proj donate-btn">Donate</button>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-img"><img src="images/proj-water.jpg" alt="Clean Water" onerror="this.style.display='none'"/></div>
+        <div class="proj-body">
+          <h4>Clean Water for Communities</h4>
+          <p>Help bring safe and clean drinking water to rural areas.</p>
+          <button class="btn-proj donate-btn">Donate</button>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-img"><img src="images/proj-rebuild.jpg" alt="Rebuild Homes" onerror="this.style.display='none'"/></div>
+        <div class="proj-body">
+          <h4>Rebuild Homes After Disasters</h4>
+          <p>Support families in rebuilding safe homes after typhoons.</p>
+          <button class="btn-proj donate-btn">Donate</button>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-img"><img src="images/proj-meals.jpg" alt="Daily Meals" onerror="this.style.display='none'"/></div>
+        <div class="proj-body">
+          <h4>Daily Meals Program</h4>
+          <p>Provide meals for families experiencing food shortages.</p>
+          <button class="btn-proj donate-btn">Donate</button>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-img"><img src="images/proj-livelihood.jpg" alt="Livelihood" onerror="this.style.display='none'"/></div>
+        <div class="proj-body">
+          <h4>Livelihood Support Program</h4>
+          <p>Help community members rebuild income sources and develop new skills.</p>
+          <button class="btn-proj donate-btn">Donate</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ LOGIN MODAL (inner pages fallback) ═══════════ -->
+<div class="modal-bg" id="loginModal">
+  <div class="modal-box">
+    <div class="modal-icon">🔒</div>
+    <h3>Sign In Required</h3>
+    <p>To donate and support our community, please sign in or create an account first.</p>
+    <div class="modal-btns">
+      <a href="login.php" class="btn-modal-yes">Sign In</a>
+      <button class="btn-modal-no">Not Now</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ CTA ═══════════ -->
+<section class="cta-banner">
+  <div class="cta-bg"><img src="images/cta-bg.jpg" alt="" onerror="this.style.display='none'"/></div>
+  <div class="cta-overlay"></div>
+  <div class="cta-body">
+    <p>Be part of Bayanihan—give a gift to<br>help a fellow Batangueño.</p>
+    <button class="btn-cta donate-btn">DONATE</button>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer class="site-footer">
+  <p>© 2026 <a href="index.html" class="footer-umdc">UMDC</a>. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
